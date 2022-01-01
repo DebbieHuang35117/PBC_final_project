@@ -27,7 +27,7 @@ import time
 #======python的函數庫==========
 
 app = Flask(__name__)
-static_tmp_path = os.path.join(os.path.dirname(__file__), 'static', 'tmp')
+#static_tmp_path = os.path.join(os.path.dirname(__file__), 'static', 'tmp')
 # Channel Access Token
 line_bot_api = LineBotApi('FOa3yRa0zQcN2tLb6S+nmYmkjl1a1he+SLbgdIJyDdnLd7ZheY8yEMak2h5jsIqoqzzXYxk5ZLlhSImWWeGKBQqr9/378nVzcS9bNB+dKxgPgxP87QmcB8AoGD5xgdhqJf0+1LI756zue3pBRiLz3AdB04t89/1O/w1cDnyilFU=')
 # Channel Secret
