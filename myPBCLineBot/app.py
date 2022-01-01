@@ -1,5 +1,5 @@
 from flask import Flask, request, abort
-# testing
+
 from linebot import (
     LineBotApi, WebhookHandler
 )
@@ -48,7 +48,7 @@ def callback():
     except InvalidSignatureError:
         abort(400)
     return 'OK'
-
+"""
 # rich menu
 rich_menu_to_create = RichMenu(
     size=RichMenuSize(width=2500, height=843),
@@ -63,7 +63,7 @@ rich_menu_to_create = RichMenu(
 rich_menu_id = line_bot_api.create_rich_menu(rich_menu=rich_menu_to_create)
 rich_menu = line_bot_api.get_rich_menu(rich_menu_id)
 #print(rich_menu_id)
-
+"""
 userCost = 0
 userTime = 0
 userCategory = 0
