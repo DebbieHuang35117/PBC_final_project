@@ -64,12 +64,6 @@ rich_menu_id = line_bot_api.create_rich_menu(rich_menu=rich_menu_to_create)
 rich_menu = line_bot_api.get_rich_menu(rich_menu_id)
 #print(rich_menu_id)
 """
-userCost = 0
-userTime = 0
-userCategory = 0
-userDistance = 0
-userX = 0
-userY = 0
 
 userInfo = dict()
 userInfo['cost'] = 0
