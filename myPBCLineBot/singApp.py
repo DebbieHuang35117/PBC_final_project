@@ -11,7 +11,6 @@ import configparser1
 import random
 
 app = Flask(__name__)
- hjla
 # LINE 聊天機器人的基本資料
 line_bot_api = LineBotApi('FOa3yRa0zQcN2tLb6S+nmYmkjl1a1he+SLbgdIJyDdnLd7ZheY8yEMak2h5jsIqoqzzXYxk5ZLlhSImWWeGKBQqr9/378nVzcS9bNB+dKxgPgxP87QmcB8AoGD5xgdhqJf0+1LI756zue3pBRiLz3AdB04t89/1O/w1cDnyilFU=')
 handler = WebhookHandler('c37a8e4c3740ef868d01b8297a32d7a0')
