@@ -1,3 +1,4 @@
+'''
 # some words
 from __future__ import unicode_literals
 import os
@@ -55,3 +56,4 @@ def pretty_echo(event):
 
 if __name__ == "__main__":
     app.run()
+'''
