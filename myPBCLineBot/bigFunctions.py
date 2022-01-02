@@ -1,3 +1,4 @@
+'''
 #這些是LINE官方開放的套件組合透過import來套用這個檔案上
 from typing import Text
 from linebot import (LineBotApi, WebhookHandler)
@@ -195,3 +196,4 @@ def IwantToComplain_message(restaurantList, userInfo):
     # 做出更改 # 不顯示
     setRestaurantComplain(restaurantList)
 """
+'''
