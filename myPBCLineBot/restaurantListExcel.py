@@ -14,13 +14,11 @@ workbook = load_workbook(filename="pbc_restaurantList_final.xlsx")
 #open workbook
 sheet = workbook.active
 
-cnt = 0
+
 # 存取資料
 restaurantList = []
 
 for i in range(2, 31):
-    if cnt == 6:
-        break
     i = str(i)
     newRestaurant = Restaurant()
     newRestaurant.ID = i
@@ -32,12 +30,12 @@ for i in range(2, 31):
     newRestaurant.diningTimeID = 'C' + i
     newRestaurant.cost = sheet['D' + i].value
     newRestaurant.costID = 'D' + i
-    newRestaurant.startTime = datetime.datetime.strptime(sheet['F' + i].value, "%H:%M")
+    newRestaurant.startTime = sheet['F' + i].value
     newRestaurant.startTimeID = 'F' + i
-    newRestaurant.endTime = datetime.datetime.strptime(sheet['G' + i].value, "%H:%M")
+    newRestaurant.endTime = sheet['G' + i].value
     newRestaurant.endTimeID = 'G' + i
-    newRestaurant.x = float(sheet['H' + i].value)
-    newRestaurant.y = float(sheet['I' + i].value)
+    newRestaurant.x = sheet['H' + i].value
+    newRestaurant.y = sheet['I' + i].value
     newRestaurant.score = sheet['J' + i].value
     newRestaurant.scoreID = 'J' + i
     newRestaurant.intro = sheet['K' + i].value
@@ -48,6 +46,6 @@ for i in range(2, 31):
     newRestaurant.websiteID = 'M' + i
     
     restaurantList.append(newRestaurant)
-    cnt += 1
 
-print(restaurantList[0].name)
+
+#print(restaurantList[0].name)
