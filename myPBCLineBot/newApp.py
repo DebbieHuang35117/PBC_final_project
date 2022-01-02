@@ -7,6 +7,7 @@ from linebot.exceptions import (
     InvalidSignatureError
 )
 from linebot.models import *
+'''
 from bigFunctions import IwantToEat_message, IwantToScore_message
 
 
@@ -19,7 +20,7 @@ from bigFunctions import *
 #from restaurantList import *
 from restaurantListExcel import *
 #======這裡是呼叫的檔案內容=====
-
+'''
 #======python的函數庫==========
 import tempfile, os
 import datetime
